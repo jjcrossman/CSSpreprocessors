@@ -128,4 +128,32 @@ Now, let's learn a little bit about why SASS is so cool...
  * Now, let's style square1 and square2
  ```
  .square1 {@include style-box(40px, rgb(184, 53, 158))}
+ .square2 {@include style-box(100px, rgb(81, 70, 83))}
+
  ```
+
+
+#### 5.Extend/Inheritance
+
+ * Extend allows you to use the same exact line of css with another class in css.
+
+ ```
+ .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+```
+
+#### 6. Operators
+* Last, but not least. Operators. SASS allows you to do math inside of you SCSS with ``` +, -, * & %```.
+```
+.fake-nav {
+	width: 100% / 2;
+}
+```
