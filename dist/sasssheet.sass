@@ -1,0 +1,34 @@
+@import nav
+
+$red: rgb(221, 97, 28)
+$font: Helvetica, sans-serif
+
+=style-box( $length-width, $color )
+  height: $length-width
+  width: $length-width
+  background-color: $color
+
+*
+  margin: 0
+  padding: 0
+  
+body
+  color: $red
+  font-family: $font
+  background: black
+
+.testing
+  background-color: pink
+  .inside-testing
+    font-size: 2em
+    &:hover
+      color: white
+
+.testing-again
+  @extend .testing
+
+.square
+  +style-box( 40px, yellow )
+
+.square2
+  +style-box( 100px, orange )

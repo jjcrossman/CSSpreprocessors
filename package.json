@@ -1,0 +1,19 @@
+{
+  "name": "csspreprocessors",
+  "version": "1.0.0",
+  "description": "Let's first dive into a little background. ##### What is a Pre-Processor? A pre-processor is a program that takes one type of data and converts it to another. So some common pre-processor you've probably seen....",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch dist/sasssheet.sass:dist/stylesheet.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjcrossman/CSSpreprocessors.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jjcrossman/CSSpreprocessors/issues"
+  },
+  "homepage": "https://github.com/jjcrossman/CSSpreprocessors#readme"
+}
